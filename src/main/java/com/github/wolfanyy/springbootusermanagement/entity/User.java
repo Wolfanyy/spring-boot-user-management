@@ -1,6 +1,5 @@
 package com.github.wolfanyy.springbootusermanagement.entity;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
