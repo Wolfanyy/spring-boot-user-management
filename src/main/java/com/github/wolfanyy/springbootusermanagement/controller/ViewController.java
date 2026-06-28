@@ -10,4 +10,9 @@ public class ViewController {
     public String usersPage() {
         return "forward:/users/index.html";
     }
+
+    @GetMapping("/users/create")
+    public String createUserPage() {
+        return "forward:/users/create.html";
+    }
 }

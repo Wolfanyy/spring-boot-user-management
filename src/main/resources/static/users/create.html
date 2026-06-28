@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Create User</title>
+
+    <link rel="stylesheet"
+          href="/css/style.css">
+
+    <script defer
+            src="/js/create.js">
+    </script>
+</head>
+
+<body>
+
+<div class="form-page">
+
+    <div class="form-card">
+
+        <h1>Create User</h1>
+
+        <div id="error-message"
+             class="error-message hidden">
+
+        </div>
+
+        <form id="create-user-form">
+
+            <input
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    maxlength="30"
+                    required>
+
+            <input
+                    id="lastName"
+                    type="text"
+                    placeholder="Last Name"
+                    maxlength="30"
+                    required>
+
+            <input
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                    maxlength="50"
+                    required>
+
+            <input
+                    id="age"
+                    type="number"
+                    placeholder="Age"
+                    min="1"
+                    max="100"
+                    required>
+
+            <button
+                    class="btn btn-primary"
+                    type="submit">
+
+                Save User
+
+            </button>
+
+        </form>
+
+        <a class="back-link"
+           href="/users">
+
+            ← Back to users
+
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
