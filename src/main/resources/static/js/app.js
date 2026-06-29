@@ -58,14 +58,14 @@ function createUserRow(user) {
         <td>${user.age}</td>
 
         <td class="actions-column">
+        
+        <a
+        class="btn btn-secondary"
+        href="/users/${user.id}/edit">
 
-            <button
-                    class="btn btn-secondary"
-                    data-id="${user.id}">
-
-                Edit
-
-            </button>
+        Edit
+        
+        </a>
 
             <button
                     class="btn btn-danger"

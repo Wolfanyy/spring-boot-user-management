@@ -15,4 +15,9 @@ public class ViewController {
     public String createUserPage() {
         return "forward:/users/create.html";
     }
+
+    @GetMapping("/users/{id}/edit")
+    public String editPage() {
+        return "forward:/users/edit.html";
+    }
 }

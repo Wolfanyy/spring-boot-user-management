@@ -30,4 +30,19 @@ public class UserController {
         return userService.create(request);
     }
 
+    @GetMapping("/{id}")
+    public UserResponse findById(
+            @PathVariable Long id
+    ) {
+        return userService.findById(id);
+    }
+
+    @PutMapping("/{id}")
+    public UserResponse update(
+            @PathVariable Long id,
+            @Valid @RequestBody UserRequest request
+    ) {
+        return userService.update(id, request);
+    }
+
 }
